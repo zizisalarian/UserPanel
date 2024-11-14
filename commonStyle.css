@@ -166,15 +166,103 @@ nav .logout {
     gap: 12px;
 }
 
+header {
+    padding: 12px 24px;
+    background-color: var(--light);
+    border-bottom: 1px solid var(--gray-10);
+    z-index: 99;
+}
+
+.profile-img {
+    width: 58px;
+    height: 58px;
+}
+
+.profile-img img {
+    width: 100%;
+}
+.profile-name {
+    gap:6px;
+}
+.profile-name h3 {
+    overflow: hidden;
+    color: var(--Text-tx-high-contrast, #231F20);
+    text-align: right;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 185.714% */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.profile-name p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--gray);
+    text-align: right;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 200% */
+}
+
+.buttons {
+    gap: 12px;
+}
+
+.charge-code {
+    border: none;
+    padding: 2px;
+    border-radius: 15px;
+    background: radial-gradient(67.77% 62.38% at 30.06% 4.36%, rgba(255, 255, 255, 0.21) 0%, rgba(250, 168, 54, 0.07) 100%), linear-gradient(255deg, #FAA836 2.62%, #159398 80.51%);
+    background-blend-mode: overlay, normal, normal;
+    box-shadow: 0px 4px 44px 0px rgba(39, 42, 61, 0.10);
+}
+
+.charge-code span {
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    border-radius: 14px;
+    padding: 10px 24px;
+    display: inline-block
+}
+
+.mobile-logout {
+    padding: 11px;
+    border-radius: 15px;
+    border: 1px solid var(--destructive-weake);
+    background: var(--light);
+}
 
 @media (max-width: 768px) {
+    body {
+        margin-bottom: 100px
+    }
+
     nav {
         min-height: auto;
         height: fit-content;
         bottom: 0 !important;
         top: auto;
         width: 100%;
-        padding: 0 24px
+        padding: 0 24px;
+        z-index: 1;
+        border-top: 1px solid var(--gray-10);
+        background: var(--light);
+        box-shadow: 0px -8px 44px 0px rgba(39, 42, 61, 0.10);
     }
 
     nav ul {
@@ -231,13 +319,15 @@ nav .logout {
 /* --------- */
 main {
     width: calc(100% - 288px);
-    margin-right: 288px
+    margin-right: 288px;
+    
 }
 
 .tabs-title {
     width: fit-content;
     border: 1px solid var(--gray-25);
     border-radius: 20px 20px 0 0;
+    border-bottom: none;
     background: var(--light);
 }
 
@@ -263,8 +353,15 @@ main {
 .tab.active svg path {
     fill: var(--primary);
 }
+.tab .active-border-arrow path {
+    display: none;
+}
+.tab.active .active-border-arrow path{
+    display: block;
+}
 
 .tab span.active-border {
+    bottom: -1px;
     height: 3px;
     background-color: var(--primary);
     opacity: 0;
@@ -273,6 +370,12 @@ main {
 
 .tab.active span.active-border {
     opacity: 1
+}
+.tab-content-container{
+    display:none
+}
+.tab-content-container.active{
+    display:block
 }
 
 .tabs-content-title {
@@ -320,7 +423,8 @@ main {
     grid-template-rows: repeat(2, 100fr);
 }
 
-.tab-content>div , .no-result .tab-content {
+.tab-content>div,
+.no-result .tab-content {
     border-radius: 25px;
     border: 1px solid var(--gray-25);
     background: var(--light);
@@ -384,7 +488,7 @@ main {
     position: relative;
 }
 
-.test-card>svg {
+.test-card>div>svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -408,6 +512,8 @@ main {
     align-items: center;
     flex: 1 0 0;
     gap: 12px;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .test-card>a {
@@ -417,40 +523,162 @@ main {
     line-height: 32px;
     margin-top: 36px;
 }
-.no-result .tab-content{
+
+.no-result .tab-content {
     padding: 24px 40px !important;
-    
+
 }
-.no-result .status-icon{
+
+.no-result .status-icon {
     display: flex;
     padding: 12px;
     align-items: center;
     border-radius: 15px;
     background: var(--gray-10);
+    border: none;
 }
-.no-result h6{
-text-align: center;
-font-size: 18px;
-font-weight: 500;
-line-height: 32px;
+
+.no-result h6 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
 }
-.no-result p{
+
+.no-result p {
     color: var(--gray);
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-line-height: 28px; 
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
 }
-.no-result a.button{
+
+.no-result a.button {
     width: 280px;
 }
-.no-result hr{
+
+.no-result hr {
     opacity: 1;
     border-color: var(--gray-25);
 }
+
 @media (max-width: 768px) {
     main {
         width: 100%;
         margin-right: 0;
+        margin-top: 83px;
+    }
+
+    .tabs-title {
+        width: 100%;
+    }
+
+    .tabs-title li {
+        width: 50%
+    }
+
+    .tab {
+
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        height: auto;
+        padding: 12px 0;
+    }
+
+    .tab span.active-border {
+        height: 2px
+    }
+
+    .tab.active svg.active-border-arrow {
+        bottom: -1px
+    }
+
+    .tab.active svg.active-border-arrow path {
+        fill: #fff !important;
+    }
+
+    .tabs-content-title {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .mobile-filter {
+        cursor: pointer;
+        padding: 2px 16px;
+        border: 1px solid var(--gray-25);
+        background: var(--low-contrast);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .tabs-content-title {
+        padding: 16px
+    }
+
+    .tabs-content-title h5 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .tabs-content-title p {
+        text-align: right;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .no-result h6 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .no-result h6 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .no-result .tab-content {
+        padding: 16px !important
+    }
+
+    .no-result a.button {
+        max-width: 100%;
+        width: 100%
+    }
+
+    .tab-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 24px;
+    }
+
+    .label {
+        font-size: 14px;
+        line-height: 24px;
+        flex-shrink: 0;
+    }
+
+    .count-comment {
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .test-card h4 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .test-card p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px
+    }
+
+    .test-info>div {
+        font-size: 14px;
+        line-height: 26px;
     }
 }
