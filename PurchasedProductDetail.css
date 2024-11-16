@@ -2,7 +2,10 @@ main {
     gap: 20px;
     padding: 32px 24px;
 }
-
+.hr-line{
+    height:1px;
+    background-color: var(--gray-10);
+}
 .main-aside {
     width: 310px;
     flex-shrink: 0;
@@ -167,7 +170,6 @@ main {
 
 .product-tab {
     background-color: var(--light);
-    margin-bottom: 50px;
 }
 
 #ProductDetailTab {
@@ -368,6 +370,27 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+}
+.comment-card.insert-comment button{
+    width: 188px
+}
+.comment-card.insert-comment .bottom{
+background: var(--low-contrast);
+height: fit-content;
+}
+.comment-card.insert-comment textarea{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none
+}
+.comment-card.insert-comment .bottom svg path{
+    fill:var(--low-contrast);
+}
+.comment-card.insert-comment textarea::placeholder{
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; 
 }
 
 
