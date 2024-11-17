@@ -326,7 +326,7 @@ header {
 main {
     width: calc(100% - 288px);
     margin-right: 288px;
-
+    
 }
 
 @media (max-width: 992px) {
@@ -519,4 +519,115 @@ div:has(.wrong-code) {
         font-weight: 600;
         line-height: 26px;
     }
+}
+
+
+/* ------ */
+
+.main-aside {
+    top: 0;
+    left: 0;
+    width: 354px;
+    height: 100vh;
+    padding-top: 72px !important;
+    border-right: 1px solid var(--low-contrast);
+    background: var(--light);
+    flex-shrink: 0;
+}
+
+.user-profile .profile-img {
+    width: 82px;
+    height: 82px;
+
+}
+
+.user-profile .username {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.user-profile p {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.user-test-card {
+    padding: 12px;
+}
+
+.user-test-card .label {
+    padding: 12px;
+}
+
+.user-test-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.user-test-card p {
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.user-test-card p span {
+    color: var(--dark);
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 76px;
+}
+
+.charge-card {
+    padding: 20px 24px;
+    background: url(./asset/image/pattern.png) 30px 30px, radial-gradient(67.77% 62.38% at 30.06% 4.36%, rgba(255, 255, 255, 0.21) 0%, rgba(250, 168, 54, 0.07) 100%), linear-gradient(255deg, #FAA836 2.62%, #159398 80.51%);
+    ;
+    background-blend-mode: overlay, normal;
+    background-size: contain, cover, cover;
+    background-repeat: repeat, repeat, repeat;
+    /* Prominent */
+    box-shadow: 0px 4px 44px 0px rgba(39, 42, 61, 0.10);
+}
+
+.charge-card>div {
+    width: 191px;
+
+}
+
+.charge-card h6 {
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.charge-card p {
+    color: var(--light);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+
+}
+
+.charge-card a {
+    padding: 12px 24px;
+    margin-top: 22px;
+    color: var(--light);
+    font-size: 18px;
+
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.charge-card svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
 }
