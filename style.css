@@ -116,6 +116,9 @@
     font-weight: 400;
     line-height: 26px;
 }
+.count-comment span{
+    padding: 6px 0;
+}
 
 .test-card h4 {
     color: var(--dark);
@@ -219,7 +222,10 @@
     border-color: var(--gray-25);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .label-container{
+        width: 100%
+    }
     .tabs-title {
         width: 100%;
     }
@@ -303,7 +309,9 @@
         grid-column-gap: 0px;
         grid-row-gap: 24px;
     }
-
+.label-container{
+    width: fit-content;
+}
     .label {
         font-size: 14px;
         line-height: 24px;
@@ -311,10 +319,10 @@
     }
 
     .count-comment {
-        width: 100%;
+        min-width: fit-content;
         font-size: 14px;
         line-height: 24px;
-        text-align: left;
+        /* text-align: left; */
     }
 
     .test-card h4 {
