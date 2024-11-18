@@ -1,9 +1,13 @@
+body {
+    margin-bottom: 0
+}
+
 .button {
     width: 260px;
 }
 
 aside {
-    top:0;
+    top: 0;
     right: 0;
     width: 378px;
     height: 1024px;
@@ -52,6 +56,10 @@ aside ul li .status.button {
     height: auto;
     min-width: fit-content;
     width: fit-content;
+    font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 185.714% */
 }
 
 aside ul li .status-value {
@@ -61,7 +69,7 @@ aside ul li .status-value {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    gap:2px
+    gap: 2px
 }
 
 aside ul li .status-value .value {
@@ -70,14 +78,16 @@ aside ul li .status-value .value {
     font-weight: 600;
     line-height: 28px;
 }
-aside .exit-test{
+
+aside .exit-test {
     padding: 12px 24px;
     color: var(--primary);
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 32px; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
 }
+
 main {
     /* margin-right: 378px;
     width: calc(100% - 378px); */
@@ -99,23 +109,70 @@ main {
     }
 }
 
-@media (max-width: 768px){
-    body{
+@media (max-width: 1140px) {
+    main{
+        padding: 24px
+    }
+}
+@media (max-width:992px) {
+    body {
         display: block !important;
         width: 100vw;
         overflow-x: hidden;
-        background-color: red;
+        /* background-color: red; */
     }
-    body aside{
-        position: fixed !important;
-        top: 00px;
+
+    body aside {
+        position: absolute !important;
+        top: 0px;
         width: 100%;
         right: -100%;
         left: auto;
-        transition: 1s;
+        transition: .5s;
+
     }
-    #navbar:checked ~ aside{
+
+    #navbar:checked~aside {
         right: 0%;
-        background: green;
+        height: fit-content;
+
+    }
+
+    #navbar:checked~main {
+        display: none !important
+    }
+
+    main {
+        margin: 0;
+        padding: 24px;
+        padding-top: 0;
+    }
+
+    .exit-test {
+        padding: 10px 16px;
+        color: var(--primary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        /* 185.714% */
+    }
+
+    .toggler {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        padding: 10px 16px
+    }
+
+    .close-nav {
+        padding: 11px;
+        background-color: var(--light);
+    }
+    aside ul li.p-4{
+        padding: 20px 24px !important
+    }
+    .button{
+        width: 100%;
     }
 }
