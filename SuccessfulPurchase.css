@@ -27,7 +27,9 @@ p {
     grid-template-rows: 1fr;
     grid-column-gap: 12px;
 }
-
+.button {
+    width: 266px;
+}
 @media (max-width: 992px) {
     body {
         height: 100vh;
@@ -66,7 +68,8 @@ p {
         grid-template-columns: 1fr;
         grid-row-gap: 12px;
     }
-
+  
+ 
     .button {
         width: 100%;
         height: 46px;

@@ -1,0 +1,116 @@
+.button {
+    width: 260px;
+}
+
+aside {
+    top:0;
+    right: 0;
+    width: 378px;
+    height: 1024px;
+    border-left: 1px solid var(--gray-10);
+    background: var(--light);
+    position: sticky;
+    position: -webkit-sticky;
+    gap: 60px;
+
+    h6 {
+        color: var(--gray);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .progress {
+        margin-top: 52px;
+        width: 186px;
+        height: auto;
+        aspect-ratio: 1;
+        background: pink;
+        border-radius: 50%;
+    }
+}
+
+aside ul li .title {
+    gap: 12px
+}
+
+aside ul li {
+    border-bottom: 1px solid var(--gray-10);
+}
+
+aside ul li:first-child {
+    border-top: 1px solid var(--gray-10);
+}
+
+aside ul li .status.button {
+    height: auto;
+    min-width: fit-content;
+    width: fit-content;
+}
+
+aside ul li .status-value {
+    border: 1px solid var(--gray-10);
+    background: var(--low-contrast);
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    gap:2px
+}
+
+aside ul li .status-value .value {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+aside .exit-test{
+    padding: 12px 24px;
+    color: var(--primary);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; 
+}
+main {
+    /* margin-right: 378px;
+    width: calc(100% - 378px); */
+
+    width: 100%;
+    margin-right: 0;
+    padding: 68px 118px 48px;
+    gap: 64px;
+
+    ul {
+        list-style: inside disc;
+
+        li {
+            font-size: 18px;
+
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        display: block !important;
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: red;
+    }
+    body aside{
+        position: fixed !important;
+        top: 0200px;
+        width: 100%;
+        right: -200%;
+        left: auto;
+    }
+}

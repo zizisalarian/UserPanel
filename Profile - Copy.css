@@ -1,0 +1,120 @@
+.button {
+    padding: 12px 24px;
+    min-width: 210px;
+}
+
+.main-content {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+
+}
+
+.form-input h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 32px;
+}
+
+.inputs label {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.input-container {
+    background-color: var(--light);
+}
+
+.input-container input {
+    height: 100%;
+    padding: 14px 16px;
+    padding-right: 52px;
+    border: none;
+    background-color: transparent;
+}
+
+.input-container input::placeholder {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 1px solid var(--primary) !important;
+}
+
+.input-container span {
+    right: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  
+    .main-content {
+
+        /* margin-bottom: 100px; */
+        height: fit-content;
+    }
+
+    .inputs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 12px;
+    }
+
+    .form-input h4 {
+        font-size: 18px;
+        line-height: 32px;
+        /* 177.778% */
+    }
+
+    .inputs label {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .input-container input::placeholder {
+        font-size: 16px;
+        line-height: 28px;
+
+    }
+
+    .input-container input {
+        font-size: 16px;
+        line-height: 28px;
+
+    }
+
+    .form-submit {
+        margin-top: 40px;
+    }
+
+    .form-submit .button {
+        width: 100%;
+    }
+
+    .form-submit .button.cancel {
+        order: 2
+    }
+}
