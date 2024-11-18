@@ -108,9 +108,14 @@ main {
     }
     body aside{
         position: fixed !important;
-        top: 0200px;
+        top: 00px;
         width: 100%;
-        right: -200%;
+        right: -100%;
         left: auto;
+        transition: 1s;
+    }
+    #navbar:checked ~ aside{
+        right: 0%;
+        background: green;
     }
 }
