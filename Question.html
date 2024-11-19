@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./Question.css">
+    <title>User - Panel - Beginning Test</title>
+</head>
+
+<body class="d-block d-lg-flex justify-content-start align-items-stretch">
+    <input type="checkbox" id="navbar" class="d-none">
+    <div class="w-100 d-flex d-lg-none justify-content-between align-items-center p-4">
+
+        <label for="navbar" class="d-flex justify-content-center align-items-center gap-2 border border-15 toggler">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.4375 5.95837C3.4375 5.57868 3.7453 5.27087 4.125 5.27087H17.875C18.2547 5.27087 18.5625 5.57868 18.5625 5.95837C18.5625 6.33807 18.2547 6.64587 17.875 6.64587H4.125C3.7453 6.64587 3.4375 6.33807 3.4375 5.95837Z"
+                    fill="#231F20" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.4375 11C3.4375 10.6203 3.7453 10.3125 4.125 10.3125H17.875C18.2547 10.3125 18.5625 10.6203 18.5625 11C18.5625 11.3797 18.2547 11.6875 17.875 11.6875H4.125C3.7453 11.6875 3.4375 11.3797 3.4375 11Z"
+                    fill="#231F20" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.4375 16.0417C3.4375 15.662 3.7453 15.3542 4.125 15.3542H17.875C18.2547 15.3542 18.5625 15.662 18.5625 16.0417C18.5625 16.4214 18.2547 16.7292 17.875 16.7292H4.125C3.7453 16.7292 3.4375 16.4214 3.4375 16.0417Z"
+                    fill="#231F20" />
+            </svg>سؤالات
+        </label>
+        <a href="#" class="exit-test d-inline-block text-center">ذخیره و خارج شدن از آزمون</a>
+
+    </div>
+
+    <aside class="py-4 d-flex flex-column justify-content-start align-items-start flex-shrink-0">
+        <div class="px-4 w-100">
+
+            <div class="top d-flex flex-column justify-content-start align-items-start">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <img src="./asset/image/logo.png" alt="logo" width="38">
+                    <label for="navbar" class="d-flex d-lg-none border border-15 close-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.362 5.95285C13.6642 5.66955 14.1389 5.68486 14.4222 5.98705L20.0472 11.987C20.3176 12.2755 20.3176 12.7245 20.0472 13.013L14.4222 19.013C14.1389 19.3151 13.6642 19.3305 13.362 19.0472C13.0599 18.7639 13.0445 18.2892 13.3278 17.987L17.7688 13.25H4.5C4.08579 13.25 3.75 12.9142 3.75 12.5C3.75 12.0858 4.08579 11.75 4.5 11.75H17.7688L13.3278 7.01296C13.0445 6.71077 13.0599 6.23615 13.362 5.95285Z"
+                                fill="#231F20" />
+                        </svg>
+                    </label>
+                </div>
+                <h6>آزمون:</h6>
+                <h2 class="mt-1">تست شخصیت شناسی MMPI</h2>
+            </div>
+            <div class="progress mx-auto"></div>
+        </div>
+        <div class="w-100 position-relative h-100 pb-5 pb-lg-0">
+            <ul>
+                <li class="p-4">
+                    <a href="#" class="d-flex justify-content-between align-items-center">
+                        <div class="title d-flex justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.47 2.82139C8.68299 2.47836 9.11558 2.34378 9.48558 2.50545C12.3855 3.7725 13.8001 6.29558 14.4883 8.40059C14.6873 9.00929 14.8288 9.59164 14.9294 10.1123C14.9651 10.069 15.0017 10.0253 15.039 9.98129C15.9526 8.90259 17.3459 7.59203 19.2382 6.73487C19.447 6.64029 19.6861 6.63831 19.8964 6.72942C20.1068 6.82054 20.2688 6.99627 20.3427 7.21328C20.4452 7.51473 20.5527 7.82296 20.662 8.13654C21.1351 9.49349 21.6432 10.9507 21.9399 12.3925C22.3087 14.1849 22.3788 16.0648 21.6261 17.8659C20.2283 21.2103 16.9224 23.5625 13.0652 23.5625C7.94473 23.5625 3.79199 19.4165 3.79199 14.3C3.79199 10.1028 5.19595 7.92493 7.27952 4.69281C7.65562 4.10938 8.05387 3.4916 8.47 2.82139ZM13.5544 12.3499L13.5543 12.3403C13.5542 12.3307 13.5539 12.3149 13.5534 12.2932C13.5523 12.2498 13.55 12.183 13.5454 12.0955C13.536 11.9202 13.5171 11.6629 13.4789 11.3452C13.4021 10.7078 13.2486 9.83798 12.9438 8.90557C12.3882 7.20615 11.3606 5.38313 9.45785 4.30567C9.1604 4.77698 8.87797 5.21682 8.61104 5.63253C6.55374 8.83646 5.41699 10.6068 5.41699 14.3C5.41699 18.5171 8.84025 21.9375 13.0652 21.9375C16.2453 21.9375 18.9732 19.9993 20.1268 17.2392C20.7039 15.8584 20.6831 14.3472 20.3483 12.7201C20.0755 11.3945 19.6127 10.0657 19.1425 8.71537C19.132 8.68541 19.1216 8.65544 19.1112 8.62546C17.8974 9.32696 16.9533 10.2354 16.279 11.0316C15.8731 11.5107 15.5708 11.9424 15.3715 12.2514C15.272 12.4056 15.1987 12.5286 15.1513 12.6108C15.1277 12.6519 15.1106 12.6828 15.1 12.7021L15.089 12.7224L15.0879 12.7246C15.0878 12.7247 15.0879 12.7245 15.0879 12.7246C15.088 12.7244 15.0879 12.7246 14.3669 12.35M13.5544 12.3499C13.5544 12.3498 13.5544 12.3501 13.5544 12.3499C13.5544 12.35 13.5544 12.351 13.5544 12.3511C13.5549 12.7251 13.8107 13.0505 14.1741 13.1393C14.5377 13.2281 14.9151 13.0566 15.0879 12.7246"
+                                    fill="#231F20" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.58366 13.2708C8.03239 13.2708 8.39616 13.6346 8.39616 14.0833C8.39616 16.6261 10.4575 18.6875 13.0003 18.6875C13.4491 18.6875 13.8128 19.0513 13.8128 19.5C13.8128 19.9487 13.4491 20.3125 13.0003 20.3125C9.56005 20.3125 6.77116 17.5236 6.77116 14.0833C6.77116 13.6346 7.13493 13.2708 7.58366 13.2708Z"
+                                    fill="#231F20" />
+                            </svg>
+                            رغبت‌های شغلی
+                        </div>
+                        <div class="status button button-primary rounded-pill px-3 py-1">
+                            کامل شده
+                        </div>
+                    </a>
+                </li>
+                <li class="p-4">
+                    <a href="#" class="d-flex justify-content-between align-items-center">
+                        <div class="title d-flex justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2433 5.75191C11.8905 4.95104 10.8242 4.9428 10.4584 5.73397L4.16624 19.3407C3.82516 20.0782 4.36472 20.8542 5.05464 20.8542H20.9459C21.6378 20.8542 22.1778 20.0738 21.832 19.3358L19.0197 13.3326C18.6834 12.6148 17.7589 12.5513 17.329 13.1886L14.7632 16.992C14.5122 17.364 14.0072 17.4621 13.6352 17.2111C13.2632 16.9602 13.1651 16.4552 13.4161 16.0832L15.4598 13.0537L12.2433 5.75191ZM16.6055 11.6237L13.7304 5.09682C12.8146 3.01805 9.93768 2.98837 8.98343 5.05192L2.6913 18.6586C1.88858 20.3945 3.09291 22.4792 5.05464 22.4792H20.9459C22.9135 22.4792 24.1172 20.3832 23.3035 18.6464L20.4912 12.6432C19.7617 11.0861 17.8675 10.6889 16.6055 11.6237Z"
+                                    fill="#231F20" />
+                            </svg>
+                            توانایی‌ها
+                        </div>
+                        <div class="status status-value button rounded-pill px-3 py-1">
+                            <span class="total">۱۰۹</span>
+                            <span>/</span>
+                            <span class="value">۱۸</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="p-4">
+                    <a href="#" class="d-flex justify-content-between align-items-center">
+                        <div class="title d-flex justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7 2.4375C7.38387 2.4375 7.71536 2.70615 7.79488 3.08169C8.05707 4.31994 8.42293 5.12473 8.9036 5.6844C9.37571 6.23412 10.0203 6.61901 10.9802 6.90262C11.3255 7.00464 11.5625 7.32176 11.5625 7.68182C11.5625 8.04188 11.3255 8.359 10.9802 8.46102C10.0203 8.74463 9.37571 9.12952 8.9036 9.67923C8.42293 10.2389 8.05707 11.0437 7.79488 12.2819C7.71536 12.6575 7.38387 12.9261 7 12.9261C6.61613 12.9261 6.28464 12.6575 6.20512 12.2819C5.94294 11.0437 5.57703 10.2391 5.09635 9.67947C4.62417 9.12977 3.9795 8.74485 3.01958 8.46096C2.67437 8.35887 2.4375 8.0418 2.4375 7.68182C2.4375 7.32184 2.67437 7.00477 3.01958 6.90268C4.01856 6.60724 4.66827 6.19839 5.13352 5.64023C5.609 5.0698 5.95352 4.26992 6.20512 3.08169C6.28464 2.70615 6.61613 2.4375 7 2.4375ZM5.24528 7.6809C5.64768 7.9394 6.0092 8.2483 6.32903 8.62065C6.58555 8.91929 6.80739 9.24965 6.99994 9.61317C7.19249 9.2496 7.41432 8.91918 7.67084 8.6205C7.99018 8.24866 8.35111 7.94008 8.75282 7.68182C8.35111 7.42355 7.99018 7.11498 7.67084 6.74314C7.41466 6.44485 7.19308 6.11492 7.00071 5.75191C6.82284 6.08723 6.61834 6.39684 6.38176 6.68068C6.05282 7.0753 5.67469 7.4049 5.24528 7.6809ZM15.9999 5.98295C16.3751 5.98292 16.7015 6.23975 16.7897 6.6044C17.363 8.9739 17.9506 10.4562 18.8367 11.5227C19.7089 12.5723 20.9439 13.3054 23.0099 14.0029C23.3401 14.1144 23.5625 14.4241 23.5625 14.7726C23.5625 15.1212 23.3403 15.4309 23.0101 15.5425C21.0352 16.2098 19.8146 16.886 18.9262 17.917C18.0265 18.9611 17.3898 20.4587 16.7898 22.9409C16.7016 23.3056 16.3752 23.5625 16.0001 23.5625C15.6249 23.5625 15.2985 23.3057 15.2103 22.9411C14.6384 20.5773 14.0496 19.0941 13.1622 18.0259C12.2888 16.9744 11.0526 16.2388 8.99011 15.5425C8.65988 15.4311 8.43755 15.1214 8.4375 14.7728C8.43745 14.4243 8.65971 14.1146 8.9899 14.003C10.9648 13.3357 12.1854 12.6594 13.0738 11.6284C13.9735 10.5843 14.6102 9.0868 15.2102 6.60456C15.2984 6.23989 15.6248 5.98299 15.9999 5.98295ZM15.9974 9.66785C15.5451 10.8881 15.0073 11.874 14.3048 12.6892C13.5335 13.5843 12.5978 14.2346 11.4524 14.7755C12.6726 15.3574 13.6365 16.0537 14.4122 16.9875C15.0797 17.7911 15.5822 18.7406 16.0021 19.8789C16.4545 18.658 16.9925 17.6718 17.6952 16.8563C18.4663 15.9614 19.4017 15.3112 20.5467 14.7703C19.326 14.1892 18.3623 13.4943 17.5869 12.5612C16.9194 11.7578 16.4172 10.8079 15.9974 9.66785Z"
+                                    fill="#231F20" />
+                            </svg>
+                            ارزش‌های کاری
+                        </div>
+                        <div class="status status-value button rounded-pill px-3 py-1">
+                            <span class="total">۱۰۹</span>
+                            <span>/</span>
+                            <span class="value">۱۸</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="p-4">
+                    <a href="#" class="d-flex justify-content-between align-items-center">
+                        <div class="title d-flex justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.4375 13C2.4375 12.5513 2.80127 12.1875 3.25 12.1875H5.41667C5.8654 12.1875 6.22917 12.5513 6.22917 13C6.22917 13.4487 5.8654 13.8125 5.41667 13.8125H4.09894C4.50944 18.3678 8.33785 21.9375 13 21.9375C17.6621 21.9375 21.4906 18.3678 21.9011 13.8125H20.5833C20.1346 13.8125 19.7708 13.4487 19.7708 13C19.7708 12.5513 20.1346 12.1875 20.5833 12.1875H22.75C23.1987 12.1875 23.5625 12.5513 23.5625 13C23.5625 18.8335 18.8335 23.5625 13 23.5625C7.16651 23.5625 2.4375 18.8335 2.4375 13Z"
+                                    fill="#231F20" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13 6.77083C13.4487 6.77083 13.8125 7.1346 13.8125 7.58333V22.75C13.8125 23.1987 13.4487 23.5625 13 23.5625C12.5513 23.5625 12.1875 23.1987 12.1875 22.75V7.58333C12.1875 7.1346 12.5513 6.77083 13 6.77083Z"
+                                    fill="#231F20" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13 4.0625C12.2521 4.0625 11.6458 4.66878 11.6458 5.41667C11.6458 6.16455 12.2521 6.77083 13 6.77083C13.7479 6.77083 14.3542 6.16455 14.3542 5.41667C14.3542 4.66878 13.7479 4.0625 13 4.0625ZM10.0208 5.41667C10.0208 3.77132 11.3547 2.4375 13 2.4375C14.6453 2.4375 15.9792 3.77132 15.9792 5.41667C15.9792 7.06202 14.6453 8.39583 13 8.39583C11.3547 8.39583 10.0208 7.06202 10.0208 5.41667Z"
+                                    fill="#231F20" />
+                            </svg>
+                            مشکلات تصمیم گیری
+                        </div>
+                        <div class="status status-value button rounded-pill px-3 py-1">
+                            <span class="total">۱۰۹</span>
+                            <span>/</span>
+                            <span class="value">۱۸</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="exit-test position-absolute bottom-0 d-none d-lg-inline-block w-100 text-center">ذخیره و
+                خارج شدن از آزمون</a>
+        </div>
+    </aside>
+    <main class="d-flex flex-column justify-content-start align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-center h-100">
+            <div>
+                <h6 class="text-center"><strong>سوال ۱۸  </strong>از ۱۰۹</h6>
+                <h1>به عنوان نماینده گروه نتیجه و حاصل کارها را در جمع‌های بزرگ و کوچک ارائه کنم.</h1>
+            </div>
+            <div class="question-answer">
+                <form action="" class="d-flex flex-column justify-content-start align-items-center">
+                    <ul class="d-flex w-100 flex-column justify-content-start align-items-center">
+                        <li class="p-3 border-8 d-block" style="--border-color: #D1E4E5">
+                            <label for="val-1" class="d-flex align-items-center justify-content-start">
+                                <input type="radio" name="question-1" id="val-1" value="1">
+                                <span class="checkmark position-relative"></span>
+                                کاملاً موافقم
+                            </label>
+                        </li>
+                        <li class="p-3 border-8 d-block" style="--border-color: #D9E7E8">
+                            <label for="val-2" class="d-flex align-items-center justify-content-start">
+                                <input type="radio" name="question-1" id="val-2" value="2">
+                                <span class="checkmark position-relative"></span>
+                                نسبتاً موافقم
+                            </label>
+                        </li>
+                        <li class="p-3 border-8 d-block" style="--border-color: #F3F9FA">
+                            <label for="val-3" class="d-flex align-items-center justify-content-start">
+                                <input type="radio" name="question-1" id="val-3" value="3">
+                                <span class="checkmark position-relative"></span>
+                                کمی موافقم
+                            </label>
+                        </li>
+                        <li class="p-3 border-8 d-block" style="--border-color: #FDF6F8">
+                            <label for="val-4" class="d-flex align-items-center justify-content-start">
+                                <input type="radio" name="question-1" id="val-4" value="4">
+                                <span class="checkmark position-relative"></span>
+                                کمی مخالفم
+                            </label>
+                        </li>
+                        <li class="p-3 border-8 d-block" style="--border-color: #F0E2E6">
+                            <label for="val-5" class="d-flex align-items-center justify-content-start">
+                                <input type="radio" name="question-1" id="val-5" value="5">
+                                <span class="checkmark position-relative"></span>
+                                نسبتاً مخالفم
+                            </label>
+                        </li>
+                        <li class="p-3 border-8 d-block" style="--border-color: #EEDADF">
+                            <label for="val-6" class="d-flex align-items-center justify-content-start">
+                                <input type="radio" name="question-1" id="val-6" value="6">
+                                <span class="checkmark position-relative"></span>
+                                کاملاً مخالفم
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="buttons-container">
+                        <a href="" class="button">سؤال قبل</a>
+                        <a href="" class="button button-primary">  سؤال بعد</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
