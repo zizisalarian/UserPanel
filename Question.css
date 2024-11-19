@@ -179,9 +179,10 @@ main {
 }
 
 
-main{
+main {
     height: 100vh;
 }
+
 h6 {
     color: var(--gray);
     font-size: 18px;
@@ -212,9 +213,11 @@ h1 {
 .question-answer ul {
     list-style-type: none;
 }
-.question-answer{
+
+.question-answer {
     margin-top: 88px;
 }
+
 .question-answer li {
     width: 100%;
     background: var(--low-contrast);
@@ -276,9 +279,47 @@ h1 {
     right: 0;
     border: 2px solid var(--low-contrast);
 }
+
 .buttons-container {
-    width: 544px;
+    margin-top: 40px;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 12px;
+}
+
+.button {
+    width: auto;
+
+
+}
+
+
+@media (max-width: 992px) {
+    h6 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    h6 strong {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .question-answer{
+        margin-top: 84px;
+    }
+    main{
+        width: 100%
+    }
+ul{
+    order: 1;
+}
+    .buttons-container {
+        order: 0
+    }
 }
