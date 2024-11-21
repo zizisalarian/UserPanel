@@ -140,12 +140,22 @@ button {
     background: var(--destructive-weakest);
     color: var(--destructive);
 }
-
-.label.count-comment {
+.label-dark {
+    background: var(--low-contrast);
+    color: var(--dark);
+}
+.label-gray {
+    color: var(--gray);
     border: 1px solid var(--gray-10);
     background: var(--low-contrast);
     padding: 12px;
 }
+.label.count-comment{
+    border: 1px solid var(--gray-10);
+    background: var(--low-contrast);
+    padding: 12px;
+}
+
 
 .border {
     border: 1px solid var(--gray-25);
