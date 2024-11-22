@@ -184,6 +184,9 @@ button {
 .text-destructive {
     color: var(--destructive)
 }
+.primary {
+    color: var(--primary)
+}
 
 body {
     font-family: var(--main-font);
