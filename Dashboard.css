@@ -19,7 +19,8 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
-    span{
+
+    span {
         color: var(--dark);
 
     }
@@ -74,10 +75,11 @@
     width: 200px;
 }
 
-.card .progress {
-    width: 104px;
-    height: 104px;
-    background-color: red;
+.card .progress-chart {
+    margin-right: 36px;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: red; */
 }
 
 .card-title {
@@ -198,7 +200,7 @@
 
 
 /* ---------no result------- */
-.no-result  {
+.no-result {
     padding: 24px 40px;
 
 }
@@ -235,6 +237,7 @@
     opacity: 1;
     border-color: var(--gray-25);
 }
+
 /* ------------- */
 
 
@@ -246,9 +249,11 @@
         grid-column-gap: 8px;
         grid-row-gap: 8px;
     }
-    .card-title>img{
+
+    .card-title>img {
         display: none;
     }
+
     .card-content-section {
         padding: 8px
     }
@@ -264,15 +269,18 @@
         text-align: center !important;
     }
 }
+
 @media (max-width: 992px) {
     .main-content {
         width: 100%;
     }
-    .main-content-header{
+
+    .main-content-header {
         padding-left: 12px !important;
         padding-right: 12px !important;
         margin-bottom: 28px;
     }
+
     .main-content-header h3 {
         font-size: 20px;
         font-weight: 500;
@@ -297,6 +305,15 @@
 
     .user-test-cards .user-test-card {
         flex: 1 0 0;
+    }
+
+    .user-test-card {
+        background: var(--light);
+    }
+
+    .user-test-card span {
+        bottom: 12px;
+        left: 12px;
     }
 
     .user-test-card h5 {
@@ -393,7 +410,7 @@
         margin-left: 24px
     }
 
-   
+
 
     .card-title {
         margin-bottom: 24px;
@@ -407,7 +424,7 @@
         left: unset
     }
 
-    
+
 
     .cards.finish-tests div>svg {
         top: 0;
@@ -458,9 +475,10 @@
 
 
     /* ---------no result------- */
-.no-result{
-    padding: 16px;
-}
+    .no-result {
+        padding: 16px;
+    }
+
     .no-result h6 {
         font-size: 16px;
         line-height: 28px;
@@ -479,6 +497,7 @@
         max-width: 100%;
         width: 100%
     }
+
     .no-result hr {
         margin: 20px 0 !important;
     }
@@ -486,3 +505,99 @@
 }
 
 
+
+
+/* ---- */
+
+.circular-progress {
+    width: 104px;
+    height: 104px;
+    background-image: conic-gradient(var(--primary) 10%, var(--secondary) 65%, transparent 0);
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+}
+
+.inside {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .percent {
+        width: 73px;
+        height: 73px;
+        background: var(--light);
+        box-shadow: 0px 4px 44px 0px rgba(39, 42, 61, 0.10);
+        color: var(--dark);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+}
+
+.dot-progress {
+    position: absolute;
+    inset: 2px;
+    transform: rotate(calc(3.6deg * 65));
+}
+
+.dot-progress::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary);
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.dot-first {
+    position: absolute;
+    inset: 2px;
+}
+
+.dot-first::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: var(--primary);
+    z-index: 10;
+    border-radius: 50%;
+
+}
+
+@media (max-width: 992px) {
+    .circular-progress {
+        flex-shrink: 0;
+        width: 72px;
+        height: 72px;
+        padding: 3px;
+    }
+
+   .inside .percent {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .dot-first {
+        inset: 1px
+    }
+    .dot-first::before{
+        width: 3px;
+        height: 3px;
+        top: -1px;
+    }
+}

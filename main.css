@@ -572,6 +572,11 @@ div:has(.wrong-code) {
 .user-test-card {
     padding: 12px;
 }
+    .user-test-card span {
+        bottom: 12px;
+        left: 12px;
+    }
+
 
 .user-test-card .label {
     padding: 12px;

@@ -4,7 +4,6 @@ let prevBtn = document.querySelector('.prev')
 let firstDashboardCards = document.querySelector('.firstCards')
 let firstDashboardCard = firstDashboardCards.querySelector('.card')
 
-
 nextBtn.addEventListener('click', () => {
     let cardWidth = firstDashboardCard.getBoundingClientRect().width
     let cardMargin = window.getComputedStyle(firstDashboardCard).marginLeft.slice(0, -2)
