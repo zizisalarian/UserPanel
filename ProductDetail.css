@@ -2,7 +2,10 @@ main {
     gap: 20px;
     padding: 32px 24px;
 }
-
+.hr-line{
+    height:1px;
+    background-color: var(--gray-10);
+}
 .main-aside {
     width: 310px;
     flex-shrink: 0;
@@ -601,7 +604,10 @@ main {
 }
 
 @media (max-width: 992px) {
-
+    main{
+        margin-top: 0;
+        padding: 24px;
+    }
     .goup-container {
         width: fit-content;
         bottom: 131px;
