@@ -238,7 +238,7 @@
             <h5 class="d-flex justify-content-center align-items-center gap-1">تمام سنین</h5>
           </div>
         </div>
-        <div class="d-flex d-lg-none flex-column justify-content-start align-items-center ">
+        <div class="mobile-test-price-container d-flex d-lg-none flex-column justify-content-start align-items-center ">
           <div class="mobile-test-price w-100 border-15 border-gray-10 my-4">
 
             <div class="d-flex justify-content-end w-100 align-items-center gap-2">
@@ -260,9 +260,36 @@
             </div>
           </div>
 
-          <a href="#" class="button button-primary w-100 mb-2 mt-0">خرید آزمون</a>
+          <a href="#checkout" class="button button-primary w-100 mb-2 mt-0" data-bs-toggle="modal" role="button">خرید
+            آزمون</a>
           <a href="#" class="d-inline-block view-resume text-center mb-1 w-100">مشاهده نمونه کارنامه</a>
           <img src="./asset/image/Illustration-1.png" alt="">
+
+        </div>
+        <div class="mobile-fixed-price  d-lg-none justify-content-between align-items-center px-4 py-2">
+          <div class="mobile-test-price w-100 border-15 border-gray-10">
+
+            <div class="d-flex justify-content-end w-100 align-items-center gap-2">
+              <h6>قیمت آزمون</h6>
+              <span class="discount-price position-relative">۳۰۰٬۰۰۰
+                <svg class="position-absolute top-50 translate-middle-y end-0" xmlns="http://www.w3.org/2000/svg"
+                  width="57" height="13" viewBox="0 0 57 13" fill="none">
+                  <path d="M1 12L56 0.999999" stroke="#231F20" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="discount-percent text-destructive">۱۸٪</span>
+            </div>
+
+            <div class=" w-100 d-flex justify-content-end align-items-center">
+              <div>
+                <span class="price">۳۰۰٬۰۰۰</span>
+                <span class="ms-1">تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#checkout" class="button button-primary w-100 mb-2 mt-0" data-bs-toggle="modal" role="button">خرید
+            آزمون</a>
 
         </div>
 
@@ -772,7 +799,8 @@
           <span class="ms-1">تومان</span>
         </div>
       </div>
-      <a href="#" class="button button-primary w-100 mb-2 mt-4">خرید آزمون</a>
+      <a href="#checkout" class="button button-primary w-100 mb-2 mt-4" data-bs-toggle="modal" role="button">خرید
+        آزمون</a>
       <a href="#" class="d-inline-block w-100 view-resume text-center mb-1 w-100">مشاهده نمونه کارنامه</a>
       <img src="./asset/image/Illustration-1.png" alt="">
     </div>
@@ -787,11 +815,54 @@
     </div>
   </main>
 
-  
 
 
 
 
+
+  <div class="modal fade checkout" id="checkout" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3 p-lg-4 d-flex flex-column justify-content-start align-items-stretch">
+        <div class="d-flex gap-3 justify-content-start align-items-center modal-head">
+          <div class="label label-primary p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.5581 3.04236C15.8499 2.98588 16.1497 2.98588 16.4415 3.04236C16.7762 3.10714 17.0797 3.26507 17.3628 3.41235C17.3865 3.42466 17.41 3.43689 17.4334 3.44899L28.4595 9.15553C28.7914 9.32732 28.9998 9.66988 28.9998 10.0436V20.4815C28.9998 20.5126 28.9999 20.544 29 20.5755C29.0009 20.952 29.0018 21.3515 28.8755 21.7244C28.7655 22.049 28.5857 22.3458 28.3485 22.5935C28.0756 22.8785 27.7191 23.0619 27.3851 23.2337C27.357 23.2482 27.3291 23.2625 27.3013 23.2769L16.4595 28.8881C16.1712 29.0373 15.8284 29.0373 15.5402 28.8881L4.69831 23.2769C4.67057 23.2625 4.64262 23.2482 4.6145 23.2337C4.28048 23.0619 3.92405 22.8785 3.65112 22.5935C3.41388 22.3458 3.23413 22.049 3.12414 21.7244C2.9978 21.3515 2.99876 20.9508 2.99967 20.5728C2.99974 20.5411 2.99982 20.5096 2.99982 20.4782V10.0436C2.99982 9.66988 3.20824 9.32732 3.54018 9.15553L14.565 3.44966C14.5884 3.43752 14.612 3.42524 14.6357 3.4129C14.9194 3.26532 15.2234 3.10714 15.5581 3.04236ZM15.8604 5.03714C15.7782 5.07411 15.6722 5.12861 15.4842 5.22587L6.22368 10.0187L15.9998 14.8032L25.776 10.0187L16.5141 5.2252C16.3266 5.12816 16.2209 5.07385 16.1391 5.03702C16.0892 5.01458 16.0671 5.0075 16.061 5.00583M26.9998 11.6464L16.9998 16.5405V26.3554L26.3821 21.5007C26.6031 21.3863 26.7288 21.3208 26.8204 21.2659C26.8771 21.2319 26.8989 21.2146 26.9045 21.2098C26.9386 21.174 26.9649 21.1307 26.9812 21.0827M14.9998 26.3554V16.5405L4.99982 11.6464V20.4782C4.99982 20.7283 5.00025 20.8713 5.00687 20.9791C5.01109 21.0479 5.01671 21.0758 5.01845 21.0828C5.03474 21.1308 5.06108 21.174 5.09516 21.2098C5.10072 21.2146 5.12253 21.2319 5.17923 21.2659C5.27088 21.3208 5.39656 21.3863 5.61758 21.5007L14.9998 26.3554ZM15.8604 5.03714C15.9104 5.01462 15.9326 5.0075 15.9387 5.00581L15.8604 5.03714ZM15.9405 5.00538C15.9404 5.00541 15.9398 5.00559 15.9387 5.00581L15.9405 5.00538Z"
+                fill="#159398" />
+            </svg>
+
+          </div>
+          تست شخصیت شناسیMPI
+        </div>
+        <div class="border-gray-10 border-8 price-detail ">
+          <div class="d-flex justify-content-between align-items-center">
+
+            <div>قیمت آزمون</div>
+            <div class="price">۳۵۴٬۰۰۰
+              <span class="ms-1">تومان</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center text-destructive">
+
+            <div>قیمت آزمون</div>
+            <div class="price">۳۵۴٬۰۰۰
+              <span class="ms-1">تومان</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center final-price">
+
+          <div>قیمت نهایی</div>
+          <div class="price">۴۱۲٬۰۰۰
+            <span class="ms-1">تومان</span>
+          </div>
+        </div>
+        <a href="#" class="button button-primary w-100">خرید آزمون</a>
+      </div>
+    </div>
+  </div>
   <div class="modal fade" id="chargeModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content p-3 p-lg-4 d-flex flex-column justify-content-start align-items-start">
@@ -941,6 +1012,24 @@
         productTabTitle.classList.add("active");
       });
     });
+  </script>
+  <script>
+    let priceContainer = document.querySelector('.mobile-test-price-container')
+    let price = document.querySelector('.mobile-fixed-price')
+    let goup = document.querySelector('.goup-container')
+    
+    document.addEventListener('scroll', () => {
+      
+      if (priceContainer.getBoundingClientRect().top < 0) {
+        price.classList.add('d-flex');
+        goup.style.bottom = '180px'
+      } else {
+        price.classList.remove('d-flex')
+        goup.style.bottom = '120px'
+
+      }
+
+    })
   </script>
 </body>
 

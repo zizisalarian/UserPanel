@@ -11,6 +11,7 @@ main {
     background: var(--light);
     top: 24px;
     left: 0;
+    padding-top: 24px !important;
 }
 
 .main-aside h4 {
@@ -80,6 +81,7 @@ main {
     background: var(--light);
     box-shadow: 0px 6px 34px 0px rgba(39, 42, 61, 0.09);
 }
+
 .goback {
     font-size: 16px;
     line-height: 28px;
@@ -167,7 +169,7 @@ main {
 
 .product-tab {
     background-color: var(--light);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 #ProductDetailTab {
@@ -370,6 +372,15 @@ main {
     line-height: 28px;
 }
 
+@media (max-width: 1400px) {
+    #ProductDetailTab li {
+        padding: 12px;
+    }
+
+    #ProductDetailTab li a {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 1200px) {
 
@@ -435,6 +446,7 @@ main {
         background: var(--low-contrast);
     }
 
+
     .mobile-test-price h6 {
         font-size: 14px;
         line-height: 26px;
@@ -464,6 +476,37 @@ main {
         font-size: 14px;
         font-weight: 400;
         line-height: 26px;
+    }
+
+    .mobile-fixed-price {
+        width: 100%;
+        display: none;
+        position: fixed;
+        bottom: 91px;
+        left: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        z-index: 999;
+        background-color: var(--light);
+        border-top: 1px solid var(--gray-10);
+        background: var(--light);
+        box-shadow: 0px 0px 4px 0px rgba(39, 42, 61, 0.10);
+       
+        h6 {
+            color: var(--gray);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            /* 200% */
+        }
+
+        .mobile-test-price {
+            padding: 0 12px;
+            border: none !important;
+            min-width: fit-content;
+            background-color: transparent
+        }
     }
 
     #ProductDetailTab {
@@ -551,15 +594,158 @@ main {
         width: 54px;
         height: 54px;
     }
-    .product-tab{
+
+    .product-tab {
         margin-bottom: 16px;
     }
 }
-@media (max-width: 992px){
-    
-    .goup-container{
-        width:fit-content;
+
+@media (max-width: 992px) {
+
+    .goup-container {
+        width: fit-content;
         bottom: 131px;
         left: 23px !important;
     }
+}
+
+.checkout .modal-head {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    /* 170% */
+}
+
+.checkout .price-detail {
+    padding: 20px;
+    background: var(--low-contrast);
+    color: var(--gray);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+    /* 177.778% */
+    span {
+        color: var(--gray);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 175% */
+    }
+}
+
+.checkout .price-detail>div:last-child {
+    margin-top: 20px;
+}
+
+.checkout .price-detail .price {
+    color: var(--dark);
+    overflow: hidden;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 177.778% */
+}
+
+.checkout .final-price {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+
+    /* 170% */
+    .price {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+
+        /* 166.667% */
+        span {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 177.778% */
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .checkout>div {
+        margin: 0;
+    }
+
+    .checkout.fade .modal-content {
+        position: absolute;
+        bottom: -100%;
+        border-radius: 20px 20px 0 0;
+        transition: 1s
+    }
+
+    .checkout.fade.show .modal-content {
+        position: absolute;
+        bottom: -15px;
+        border-radius: 20px 20px 0 0;
+        transition: 1s
+    }
+
+    .checkout .label {
+        padding: 14px !important
+    }
+
+    .checkout svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .checkout .modal-head {
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        /* 175% */
+    }
+
+    .checkout .price-detail {
+        padding: 16px;
+        font-size: 14px;
+        line-height: 26px;
+
+        span {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    .checkout .price-detail>div:last-child {
+        margin-top: 12px;
+    }
+
+    .checkout .price-detail .price {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .checkout .final-price {
+        font-size: 16px;
+        line-height: 28px;
+
+        .price {
+            font-size: 20px;
+            line-height: 34px;
+
+            span {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
 }
