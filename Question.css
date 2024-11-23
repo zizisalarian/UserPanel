@@ -57,7 +57,8 @@ aside ul li.active .title {
     font-weight: 500;
 }
 aside ul li.active {
-    border-left: 2px solid var(--dark)
+    border-left: 2px solid var(--dark);
+    background: var(--low-contrast);
 }
 
 aside ul li {

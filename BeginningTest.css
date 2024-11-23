@@ -108,7 +108,31 @@ main {
         }
     }
 }
+.progress-chart{
+    margin-top: 52px;
+}
+.circular-progress {
+    flex-shrink: 0;
+    width: 186px;
+    height: 186px;
+    padding: 6px;
+}
+.inside .percent {
+    width: 136px;
+    height: 136px;
+    span{
 
+    color: var(--gray);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+    }
+}
+.dot-first::before {
+    width: 6px;
+    height: 6px;
+}
 @media (max-width: 1140px) {
     main{
         padding: 24px
@@ -175,4 +199,26 @@ main {
     .button{
         width: 100%;
     }
+    
+    .circular-progress {
+        flex-shrink: 0;
+        width: 152px;
+        height: 152px;
+        padding: 6px;
+    }
+    .inside .percent {
+        width: 112px;
+        height: 112px;
+font-size: 24px;
+line-height: 40px; 
+        span{
+            font-size: 12px;
+            line-height: 24px; 
+        }
+    }
+    .dot-first::before {
+        width: 6px;
+        height: 6px;
+    }
 }
+
