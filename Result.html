@@ -167,7 +167,7 @@
                     <h2 class="title">نتایج آزمون رغبت</h2>
                     <p class="title-desc mt-1">اعتبار پرسشنامه شما <span>۸۷٪</span> است.</p>
                     <div class="line"></div>
-                    <div class="d-flex justify-content-start align-items-end flex-column chart-content">
+                    <div class="d-flex justify-content-between align-items-end flex-column chart-content">
                         <div class="label label-primary">معتبر</div>
                         <div class="main-chart">
                             <img src="./asset/image/Radar.png" alt="">
@@ -179,15 +179,7 @@
                             </div>
                             <div class="line w-100 my-3"></div>
                             <div class="chart-content px-3">
-                                <div class="chart-row my-3 d-flex justify-content-between align-items-center">
-                                    <div class="d-flex justify-content-start align-items-center gap-12">
-                                        <span class="circle bgc-destructive"></span>
-                                        <p>ارتباط با دیگران</p>
-                                    </div>
-                                    <div class="value d-flex justify-content-end align-items-start gap-12">
-                                        <span class="value-num">۷۶</span>
-                                    </div>
-                                </div>
+                                
                                 <div class="chart-row my-3 d-flex justify-content-between align-items-center">
                                     <div class="d-flex justify-content-start align-items-center gap-12">
                                         <span class="circle bgc-destructive"></span>
@@ -361,7 +353,24 @@
                             </div>
                         </div>
                         <div class="line w-100"></div>
-                        <div class="bottom d-flex justify-content-between align-items-stretch">
+                        <div class="bottom d-flex justify-content-between align-items-stretch position-relative">
+                            <div class="mask position-absolute p-4 d-flex justify-content-start align-items-center flex-column">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5962 24.6699C12.9662 25.1691 13.6708 25.2738 14.1699 24.9038C15.2624 24.094 16.5812 23.625 18 23.625C19.4188 23.625 20.7376 24.094 21.8301 24.9038C22.3292 25.2738 23.0338 25.1691 23.4038 24.6699C23.7738 24.1708 23.6691 23.4662 23.1699 23.0962C21.7113 22.015 19.9275 21.375 18 21.375C16.0725 21.375 14.2887 22.015 12.8301 23.0962C12.3309 23.4662 12.2262 24.1708 12.5962 24.6699Z" fill="#231F20"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.25 13.875C14.8713 13.875 15.375 14.3787 15.375 15V15.75C15.375 16.3713 14.8713 16.875 14.25 16.875C13.6287 16.875 13.125 16.3713 13.125 15.75V15C13.125 14.3787 13.6287 13.875 14.25 13.875Z" fill="#231F20"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.75 13.875C22.3713 13.875 22.875 14.3787 22.875 15V15.75C22.875 16.3713 22.3713 16.875 21.75 16.875C21.1287 16.875 20.625 16.3713 20.625 15.75V15C20.625 14.3787 21.1287 13.875 21.75 13.875Z" fill="#231F20"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 5.625C11.1655 5.625 5.625 11.1655 5.625 18C5.625 24.8345 11.1655 30.375 18 30.375C24.8345 30.375 30.375 24.8345 30.375 18C30.375 11.1655 24.8345 5.625 18 5.625ZM3.375 18C3.375 9.92284 9.92284 3.375 18 3.375C26.0772 3.375 32.625 9.92284 32.625 18C32.625 26.0772 26.0772 32.625 18 32.625C9.92284 32.625 3.375 26.0772 3.375 18Z" fill="#231F20"/>
+                                      </svg>
+                                </span>
+                                <h6>نتیجه اعتبار این آزمون پایین است!</h6>
+                                <p>ممکنه در ﺣﯿﻦ آزﻣﻮن ﺗﻤﺮﮐﺰ ﻻزم را ﻧﺪاشتی ﯾﺎ ﺗﺤﺖ تأﺛﯿﺮ ﻣﺤﯿﻂ ﺑﯿﺮون، جوابهات تناقض داﺷﺘﻪ و ﯾﺎ ﺑﺎ ﺗﺮدﯾﺪ ﭘﺎﺳﺦ دادی میتونی دوباره آزمون رو انجام بدی یا جواب رو با مشاورت چک بکنی.</p>
+                                <div class="line w-100"></div>
+                                <div class="buttons d-flex justify-content-between align-items-center w-100">
+                                    <a href="#" class="button button-primary">پاسخ دوباره</a>
+                                    <div class="text-center" onclick="showAnswer()">مشاهده نتیجه</div>
+                                </div>
+                            </div>
                             <div class="right">
                                 <div class="chart-header d-flex px-3 justify-content-between align-items-center">
                                     <h6>ابعاد ارزش‌ها</h6>
@@ -369,6 +378,42 @@
                                 </div>
                                 <div class="line w-100 my-3"></div>
                                 <div class="chart-content px-3">
+                                    <div class="chart-row my-3 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-12">
+                                            <span class="circle bgc-dark"></span>
+                                            <p>ارتباط با دیگران</p>
+                                        </div>
+                                        <div class="value d-flex justify-content-end align-items-start gap-12">
+                                            <span class="value-num">۷۶</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart-row my-3 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-12">
+                                            <span class="circle bgc-dark"></span>
+                                            <p>ارتباط با دیگران</p>
+                                        </div>
+                                        <div class="value d-flex justify-content-end align-items-start gap-12">
+                                            <span class="value-num">۷۶</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart-row my-3 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-12">
+                                            <span class="circle bgc-dark"></span>
+                                            <p>ارتباط با دیگران</p>
+                                        </div>
+                                        <div class="value d-flex justify-content-end align-items-start gap-12">
+                                            <span class="value-num">۷۶</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart-row my-3 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-12">
+                                            <span class="circle bgc-dark"></span>
+                                            <p>ارتباط با دیگران</p>
+                                        </div>
+                                        <div class="value d-flex justify-content-end align-items-start gap-12">
+                                            <span class="value-num">۷۶</span>
+                                        </div>
+                                    </div>
                                     <div class="chart-row my-3 d-flex justify-content-between align-items-center">
                                         <div class="d-flex justify-content-start align-items-center gap-12">
                                             <span class="circle bgc-dark"></span>
@@ -414,16 +459,7 @@
                                             <span class="value-num">۷۶</span>
                                         </div>
                                     </div>
-                                    <div class="chart-row my-3 d-flex justify-content-between align-items-center">
-                                        <div class="d-flex justify-content-start align-items-center gap-12">
-                                            <span class="circle bgc-gray"></span>
-                                            <p>جستجوگر</p>
-                                        </div>
-                                        <div class="value d-flex justify-content-end align-items-start gap-12">
-                                            <span class="value-num">۷۶</span>
-                                        </div>
-                                    </div>
-
+                                    
                                 </div>
                             </div>
                             <div class="chart-chart d-flex justify-content-between align-items-end flex-column">
@@ -680,7 +716,12 @@
 
     </main>
     <script src="./lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+    function showAnswer(){
+        document.querySelector('.mask').classList.remove('d-flex')
+        document.querySelector('.mask').classList.add('d-none')
+    }
+</script>
 </body>
 
 </html>
