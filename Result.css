@@ -1,0 +1,144 @@
+.gap-12{
+    gap:12px
+}
+.bgc-light{
+    background: var(--light);
+}
+.circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block
+}
+.bgc-destructive{
+    background: var(--destructive);
+}
+.bgc-primary{
+    background: var(--primary);
+}
+.bgc-secondary{
+    background: var(--secondary);
+}
+.bgc-dark{
+    background: var(--dark);
+}
+.bgc-gray{
+    background: var(--gray);
+}
+.goback{
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; 
+}
+.profile-container{
+    width: 69px;
+    height: 69px;
+    img{
+        width: 100%
+    }
+}
+.result-header {
+    padding: 12px 24px;
+    .button{
+        width: 264px
+    }
+}
+.result-header .right{
+    gap: 12px;
+    
+}
+.title{
+font-size: 18px;
+font-weight: 600;
+line-height: 32px; /* 177.778% */
+}
+.title-desc{
+    color: var(--gray);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; 
+
+span{
+    color: var(--dark);
+
+    &.text-destructive{
+        color: var(--destructive)
+    }
+}
+}
+.line{
+    height:1px;
+    background-color: var(--gray-10);
+    margin-top: 20px;
+    margin-bottom: 24px;
+
+}
+.radar{
+    width: 396px
+}
+
+.chart .bottom .right{
+    width:308px
+}
+.chart .bottom .chart-chart{
+    width:201px
+}
+.chart-header h6{
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; 
+}
+.chart-row p{
+font-size: 16px;
+font-weight: 500;
+line-height: 28px; 
+}
+.chart-row .value .details{
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; 
+}
+.chart-row .value .value-num{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px; 
+}
+.text-header{
+    padding: 0 36px
+}
+.radar{
+    flex-shrink: 0;
+}
+
+table{
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+table, td , th {
+    border: 1px solid var(--gray-25);
+
+}
+table tr {
+    /* display: flex;
+    align-items: center; */
+
+}
+
+table thead tr th{
+    background-color: var(--gray-10);
+    flex-shrink: 0;
+    min-width: fit-content;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+}
+table thead tr th:first-child , table tbody tr td:first-child{
+    flex-shrink: 1;
+    width: 100%;
+}
+td{
+    padding:12px 16px
+}
