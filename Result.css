@@ -139,7 +139,7 @@
 }
 
 .table-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 15px;
     border: 1px solid var(--gray-25);
 
@@ -170,12 +170,12 @@ table tbody tr:last-child {
 table thead tr th {
     background-color: var(--gray-10);
     flex-shrink: 0;
-    min-width: fit-content;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    text-align: center;
+    text-align: center;;
+    min-width: 150px ;
     /* 175% */
 }
 
@@ -184,6 +184,10 @@ table tbody tr td:first-child {
     text-align: right;
     flex-shrink: 1;
     width: 220px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 999;
+    right: 0;
 }
 
 table tbody tr td {
@@ -245,8 +249,8 @@ td {
 .mask {
     position: absolute;
     width: calc(100% + 48px);
-    height: calc(100% + 44px);
-    top: -20px;
+    height: calc(100% + 48px);
+    top: -24px;
     left: -24px;
     background: #44444499;
     border-radius: 0 0 25px 25px;
@@ -332,7 +336,10 @@ td {
 
     .chart {
         .bottom>div {
-            width: 50% !important
+            width: 50% !important;
+            &.mask{
+                width: calc(100% + 48px) !important;
+            }
         }
     }
 }
@@ -387,7 +394,20 @@ td {
     .chart {
         .bottom>div.mask {
             top: -24px;
-            width: calc(100% + 48px) !important;
+           
+        }
+    }
+    .mask {
+        & .buttons {
+            flex-wrap:wrap;
+            * {
+                display: inline-flex;
+                justify-content: center;
+                width: 100%;
+                flex: unset;
+                text-align: center;
+                margin: auto ;
+            }
         }
     }
 }

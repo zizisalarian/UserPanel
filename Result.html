@@ -326,7 +326,7 @@
                                     است.</p>
                             </div>
                             <div class="d-flex justify-content-end align-items-center gap-12">
-                                <p class="text-header d-none d-md-inline-block">پاسخ دوباره</p>
+                                <p class="text-header d-none d-lg-inline-block">پاسخ دوباره</p>
                                 <div class="p-3 label label-gray border-15">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                                         fill="none">
@@ -339,10 +339,10 @@
                         </div>
                         <div class="line w-100"></div>
                         <div
-                            class="bottom d-flex flex-column flex-md-row justify-content-between align-items-stretch position-relative">
+                            class="bottom d-flex flex-column flex-lg-row justify-content-between  align-items-stretch position-relative">
                             <div
-                                class="mask position-absolute p-4 d-flex justify-content-start align-items-center flex-column">
-                                <div>
+                                class="mask position-absolute flex-column p-4 d-flex justify-content-between justify-content-lg-start align-items-center flex-column">
+                                <div class="text-center">
 
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -368,15 +368,15 @@
                                         بکنی.
                                     </p>
                                 </div>
-                                <div>
+                                <div class="w-100">
                                     <div class="line w-100"></div>
-                                    <div class="buttons d-flex justify-content-between align-items-center w-100">
+                                    <div class="buttons mask-buttons d-flex  justify-content-between align-items-center w-100">
                                         <a href="#" class="button button-primary">پاسخ دوباره</a>
                                         <div class="text-center" onclick="showAnswer()">مشاهده نتیجه</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="right order-1 order-md-0">
+                            <div class="right order-1 order-lg-0">
                                 <div class="chart-header d-flex px-3 justify-content-between align-items-center">
                                     <h6>ابعاد ارزش‌ها</h6>
                                     <h6>امتیاز</h6>
@@ -468,7 +468,7 @@
                                 </div>
                             </div>
                             <div
-                                class="chart-chart order-0 order-md-1 d-flex justify-content-between align-items-end flex-column">
+                                class="chart-chart order-0 order-lg-1 d-flex justify-content-between align-items-end flex-column">
                                 <div class="label label-destructive">نامعتبر</div>
                                 <div class="w-100 text-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="201" height="201"
@@ -573,8 +573,8 @@
                     </div>
                 </div>
                 <div class="line w-100"></div>
-                <div class="table-container">
-                    <table class="w-100">
+                <div class="table-container table-responsive">
+                    <table class="w-100 table">
                         <thead>
                             <tr class="">
                                 <th class="py-2 px-3">شغل</th>
@@ -784,7 +784,7 @@
                 text: null
             },
             pane: {
-                size: '60%'
+                size: '100%'
             },
 
             plotOptions: {
