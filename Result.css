@@ -96,13 +96,13 @@
 }
 
 .chart .bottom .right {
-    width: 308px ;
+    width: 308px;
     flex-shrink: 0;
 }
 
 .chart .bottom .chart-chart {
     width: 300px
-    /* width :40% */
+        /* width :40% */
 }
 
 .chart-header h6 {
@@ -194,10 +194,11 @@ table tbody tr td {
     font-weight: 400;
     line-height: 28px;
 
-    &:first-child{
+    &:first-child {
         font-weight: 500;
     }
 }
+
 table tbody tr td:last-child,
 table tbody tr td:nth-last-child(2) {
     text-align: right
@@ -318,4 +319,75 @@ td {
 .highcharts-container {
 
     height: 300px !important;
+}
+
+@media (max-width: 1400px) {
+    .radar {
+        width: 30%;
+    }
+
+    .result-content .left {
+        width: 70%;
+    }
+
+    .chart {
+        .bottom>div {
+            width: 50% !important
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .radar {
+        width: 40%;
+    }
+
+    .result-content .left {
+        width: 60%;
+    }
+
+    .chart {
+        .bottom>div {
+            width: 50% !important
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .result-header {
+        padding: 12px;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        >div {
+            width: 100%;
+        }
+
+        .left.button {
+            display: inline-flex;
+            width: 100%
+        }
+    }
+
+    .result-content {
+        flex-wrap: wrap;
+
+        >div {
+            width: 100%;
+        }
+    }
+
+    .chart {
+        .bottom>div {
+            width: 100% !important
+        }
+    }
+
+    .chart {
+        .bottom>div.mask {
+            top: -24px;
+            width: calc(100% + 48px) !important;
+        }
+    }
 }
