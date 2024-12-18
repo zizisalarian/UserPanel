@@ -344,7 +344,7 @@ td {
     }
 }
 #gauge-chart .highcharts-container{
-    height: 100% !important
+    height: 250px !important
 }
 
 @media (max-width: 1400px) {
