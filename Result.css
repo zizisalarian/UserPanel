@@ -256,6 +256,7 @@ td {
     border-radius: 0 0 25px 25px;
     background: rgba(212, 212, 212, 0.35);
     backdrop-filter: blur(15px);
+    z-index: 9999;
 
     .line {
         background-color: var(--light);
@@ -324,6 +325,27 @@ td {
 
     height: 300px !important;
 }
+#gauge-chart{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: relative;
+    max-width: 300px;
+    max-height:300px;
+    &::before{
+        content: '';
+        width: 50%;
+        height: 50%;
+        background-color: #fff;
+        display: inline-block;
+        position: absolute;
+        top:-5px;
+        left: -5px;
+        z-index: 99;
+    }
+}
+#gauge-chart .highcharts-container{
+    height: 100% !important
+}
 
 @media (max-width: 1400px) {
     .radar {
@@ -339,6 +361,7 @@ td {
             width: 50% !important;
             &.mask{
                 width: calc(100% + 48px) !important;
+                z-index: 999
             }
         }
     }
@@ -358,6 +381,7 @@ td {
             width: 50% !important
         }
     }
+
 
 }
 
@@ -409,5 +433,8 @@ td {
                 margin: auto ;
             }
         }
+    }
+    #gauge-chart{
+       margin: 0 auto 1rem;
     }
 }
